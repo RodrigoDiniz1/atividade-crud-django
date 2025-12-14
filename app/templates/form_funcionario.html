@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load django_bootstrap5 %}
+
+{% block title %}Cadastro de Funcionário{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">
+            {% if object %}
+                ✏️ Editar Funcionário
+            {% else %}
+                ➕ Cadastrar Funcionário
+            {% endif %}
+        </h4>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <div class="d-flex gap-2 mt-3">
+                <button type="submit" class="btn btn-primary">
+                    {% if object %}
+                        💾 Salvar Alterações
+                    {% else %}
+                        ✅ Cadastrar
+                    {% endif %}
+                </button>
+                <a href="{% url 'lista_funcionarios' %}" class="btn btn-secondary">
+                    ↩️ Voltar
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

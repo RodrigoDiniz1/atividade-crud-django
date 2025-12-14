@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Dados de {{ fun.nome }}{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header bg-info text-white">
+        <h4 class="mb-0">👤 {{ fun.nome }}</h4>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">📝 Nome</label>
+                    <input type="text" class="form-control" value="{{ fun.nome }}" readonly>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">🆔 CPF</label>
+                    <input type="text" class="form-control" value="{{ fun.cpf }}" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">📧 Email</label>
+                    <input type="email" class="form-control" value="{{ fun.email }}" readonly>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">💰 Remuneração</label>
+                    <input type="text" class="form-control text-success fw-bold" value="R$ {{ fun.remuneracao|floatformat:2 }}" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer d-flex gap-2">
+        <a href="{% url 'editar_funcionario' pk=fun.id %}" class="btn btn-success">
+            ✏️ Editar
+        </a>
+        <a href="{% url 'lista_funcionarios' %}" class="btn btn-secondary">
+            ↩️ Voltar à lista
+        </a>
+    </div>
+</div>
+{% endblock %}
