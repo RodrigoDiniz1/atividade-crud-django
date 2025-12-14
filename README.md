@@ -1,8 +1,8 @@
-# 📋 Sistema CRUD de Funcionários - Django + MySQL
+# Sistema CRUD de Funcionários - Django + MySQL
 
 Sistema de gerenciamento de funcionários desenvolvido com Django e MySQL.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - ✅ **Create** - Cadastrar novos funcionários
 - ✅ **Read** - Listar todos os funcionários
@@ -10,7 +10,7 @@ Sistema de gerenciamento de funcionários desenvolvido com Django e MySQL.
 - ✅ **Delete** - Remover funcionários
 - ✅ **Detail** - Visualizar detalhes de um funcionário
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - Python 3.12
 - Django 6.0
@@ -18,7 +18,7 @@ Sistema de gerenciamento de funcionários desenvolvido com Django e MySQL.
 - Bootstrap 5 (django-bootstrap5)
 - Fonte Saira (Google Fonts)
 
-## 📦 Instalação
+## Instalação
 
 1. Clone o repositório:
 ```bash
