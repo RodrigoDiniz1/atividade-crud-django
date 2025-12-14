@@ -4,11 +4,11 @@ Sistema de gerenciamento de funcionários desenvolvido com Django e MySQL.
 
 ## Funcionalidades
 
-- ✅ **Create** - Cadastrar novos funcionários
-- ✅ **Read** - Listar todos os funcionários
-- ✅ **Update** - Editar dados de funcionários
-- ✅ **Delete** - Remover funcionários
-- ✅ **Detail** - Visualizar detalhes de um funcionário
+-  **Create** - Cadastrar novos funcionários
+-  **Read** - Listar todos os funcionários
+-  **Update** - Editar dados de funcionários
+-  **Delete** - Remover funcionários
+-  **Detail** - Visualizar detalhes de um funcionário
 
 ## Tecnologias
 
